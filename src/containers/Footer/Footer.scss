@@ -1,138 +1,163 @@
-@import 'src/styles/vars.scss';
-
 .footer {
   width: 100%;
-  padding: 60px 0;
-  background-color: $dark;
+  background-color: #303A62;
 
-  @media (max-width: 991px) {
-    padding: 30px 0;
-  }
-
-  &__table {
+  &__top {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-
-    @media (max-width: 991px) {
-      grid-template-columns: 1fr;
-      grid-gap: 20px;
-    }
-  }
-
-  &__image {
-    img {
-      width: 148px;
-      @media (max-width: 991px) {
-        width: 60px;
-      }
-    }
-
-    @media (max-width: 991px) {
-      margin: 0 auto;
-    }
-
-  }
-
-  &__list {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
 
-    @media (max-width: 991px) {
-      align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 20px 0 12px;
     }
   }
 
-  &__title {
-    font-size: 24px;
-    line-height: 1.3;
-    color: $light;
-    margin-bottom: 20px;
-    font-family: $rubik;
-
-    @media (max-width: 991px) {
-      font-size: 22px;
-    }
-
-    @media (max-width: 600px) {
-      font-size: 17px;
-      margin-bottom: 15px;
-    }
-  }
-
-  &__link {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.3;
-    color: $gray;
-    margin-bottom: 5px;
-
+  &__logotype {
     transition: opacity .3s ease;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
 
     &:hover {
       opacity: .7;
     }
+  }
 
-    @media (max-width: 991px) {
-      font-size: 20px;
-      margin-bottom: 15px;
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
 
-    @media (max-width: 600px) {
-      font-size: 15px;
-      margin-bottom: 10px;
+    a {
+      padding: 15px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: opacity .3s ease;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #8DA0C2;
+
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      order: 1;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
-    &--mail {
-      margin-bottom: 15px;
+    p {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.3;
+      color: #8DA0C2;
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0 0 15px 0;
+      }
     }
   }
 }
 
 .social {
-  margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 
-  &__link {
-    width: 46px;
-    height: 46px;
-    background: #33aa7e;
-    border-radius: 50%;
-    transition: .3s ease;
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  a {
+    position: relative;
+    width: 29px;
+    height: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
-    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #464F73 0%, #5D6585 100%);
+    margin-right: 20px;
 
     svg {
       position: relative;
-      z-index: 2;
-    }
-
-    @media (max-width: 991px) {
-      width: 40px;
-      height: 40px;
-    }
-
-    &:last-child {
-      margin-right: 0;
+      path {
+        transition: fill .3s ease;
+      }
     }
 
     &:hover {
-      background-color: $darkGreen;
+
+      svg path {
+        fill: #303a62;
+      }
+
+      &:before {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
-    &:active {
-      box-shadow: 0 5px 10px rgba(#000, .2);
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:before {
+      content: "";
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: scale(0);
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border-radius: 50%;
+      transition: .3s ease;
     }
   }
-
 }
+
+
+
+
+

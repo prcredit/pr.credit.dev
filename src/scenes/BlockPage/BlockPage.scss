@@ -1,0 +1,12 @@
+@import "../../styles/vars";
+@import "../../styles/transactions/transaction-links";
+
+.section-block {
+  .details__block {
+    margin-bottom: 45px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+}

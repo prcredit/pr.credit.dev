@@ -1,0 +1,21 @@
+.spinner {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-right-color: transparent !important;
+  border-radius: 50%;
+  animation: spinner 0.75s linear infinite;
+
+  &--green {
+    border-color: #218962;
+  }
+
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../styles/vars";
+
+.section-address {
+  .transactions {
+    &-header {
+      grid-template-columns: 1fr .5fr 1fr 1fr 40px 92px;
+      grid-gap: 20px;
+    }
+
+    &__block {
+      @media (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .transaction {
+    grid-template-columns: 1fr .5fr 1fr 1fr 40px 92px;
+    grid-gap: 20px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+
+    &-cell {
+      .link--ellipsis {
+        @media (max-width: 991px) {
+          word-break: break-all;
+        }
+      }
+    }
+  }
+
+  .show-more {
+    position: relative;
+    top: 2px;
+  }
+
+  .button--home {
+    margin-top: 30px;
+  }
+}

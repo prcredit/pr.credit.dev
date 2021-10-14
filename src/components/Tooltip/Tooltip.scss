@@ -1,0 +1,72 @@
+@import "../../styles/vars";
+
+.tooltip__container {
+  position: relative;
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+  min-width: 190px;
+  max-width: 240px;
+  padding: 12px 10px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  pointer-events: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease,
+  visibility .3s ease;
+
+  &--timestamp {
+    .tooltip__text {
+      font-size: 13px;
+    }
+  }
+
+  &--hash {
+    width: 220px;
+    .tooltip__text {
+      font-size: 10px;
+      word-break: break-all;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11px;
+    height: 7px;
+    background-image: url('/media/images/svg/tooltip-before.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__text {
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
