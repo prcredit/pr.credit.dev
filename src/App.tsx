@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import { useDispatch } from 'react-redux';
 
 import 'moment/locale/ru';
 
 import './config/api-config';
-import API from './api/api';
 import { ROUTES } from "./config/constants";
 import { MultiLangProvider } from "./context/MultiLang/MultiLang";
-import { getInfo } from './ducks/info';
 
 import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
@@ -23,17 +20,6 @@ import Search from "./containers/Search/Search";
 
 
 const App = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    API.getInfo()
-      .then(async (res) => {
-        dispatch(getInfo(res.data));
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  }, [dispatch]);
 
 
   return (

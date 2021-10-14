@@ -16,11 +16,11 @@ const NotFound = () => {
       <div className="container">
         <div className="not-found">
           <h3 className='title'>
-            {words.noResults}
+            Error 404
           </h3>
 
           <p className='text not-found__text'>
-            {words.specifyRequest}
+            К сожалению, запрашиваемая Вами страница не найдена..
           </p>
 
           <img className='not-found__image'
@@ -29,7 +29,7 @@ const NotFound = () => {
 
           <NavLink className='button button--home'
                    to={ROUTES.main}>
-            <span>{words.backToMain}</span>
+            <span>backToMain</span>
           </NavLink>
         </div>
       </div>

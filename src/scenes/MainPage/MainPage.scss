@@ -11,19 +11,5 @@
     padding: 0 0 45px;
   }
 
-  .transactions-header {
-    grid-template-columns: .7fr 7fr 1.3fr 1.3fr 1.5fr;
-    grid-gap: 20px;
-  }
 
-  .transaction {
-    grid-template-columns: .7fr 7fr 1.3fr 1.3fr 1.5fr;
-    grid-gap: 20px;
-
-    @media (max-width: 991px) {
-      display: flex;
-      flex-direction: column;
-      grid-gap: unset;
-    }
-  }
 }

@@ -49,8 +49,8 @@ const CopyItem = (props: ICopyItemProps) => {
         <p className="text copy-tooltip__text">
           {/*<span className='text--700'></span>*/}
           {!isShown
-            ? <>{words.copy} {name} {words.toClipboard}</>
-            : <>{words.copied}</>
+            ? <>копировать {name}</>
+            : <>скопировано</>
           }
         </p>
       </div>
