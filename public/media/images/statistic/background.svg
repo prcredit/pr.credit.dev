@@ -35,11 +35,11 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear" x1="0" y1="180" x2="812.95" y2="-337.698" gradientUnits="userSpaceOnUse">
-<stop stop-color="#303A62"/>
+<stop stop-color="$first-color"/>
 <stop offset="1" stop-color="#385992"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="0" y1="180" x2="812.95" y2="-337.698" gradientUnits="userSpaceOnUse">
-<stop stop-color="#303A62"/>
+<stop stop-color="$first-color"/>
 <stop offset="1" stop-color="#385992"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="4.49638" y1="547.485" x2="821.14" y2="-80.6269" gradientUnits="userSpaceOnUse">

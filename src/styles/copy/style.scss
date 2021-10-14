@@ -1,3 +1,4 @@
+@import "../vars";
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
@@ -31,12 +32,12 @@ table {
 }
 
 strong {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-weight: bold
 }
 
 [class^="i-"], [class*=" i-"] {
-  font-family: 'main' !important;
+  font-family: $oswald !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -214,7 +215,7 @@ strong {
 body {
   background: #fff;
   font-size: 16px;
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-weight: 600;
   line-height: 1;
   letter-spacing: .05em
@@ -235,7 +236,7 @@ p {
 
 #tinymce {
   font-size: 15px;
-  font-family: Helvetica, Arial, open-sans;
+  font-family: $noto-sans;
   font-weight: normal;
   padding: 10px
 }
@@ -338,7 +339,7 @@ p {
   border-radius: 3px;
   color: #fff;
   font-size: 12px;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 100;
   white-space: nowrap;
   text-align: center;
@@ -440,7 +441,7 @@ body.scrolled .header, .header.fixed {
 }
 
 .header .phones_block {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 700;
   float: right;
   position: relative;
@@ -556,7 +557,7 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
 
 .header .to_phones:before {
   content: '\e912';
-  font-family: 'main';
+  font-family: $oswald;
   position: absolute;
   left: 12px;
   top: 8px
@@ -572,7 +573,7 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
 }
 
 .top_block {
-  background: linear-gradient(to bottom right, #5835b7, #a45bc9);
+  background: #000;
   float: left;
   position: relative
 }
@@ -605,21 +606,23 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
 .top_block > .wrapper {
   letter-spacing: .05em;
   position: relative;
-  width: 1400px;
-  max-width: calc(100% - 40px);
+  max-width: 1400px;
+  width: calc(100% - 40px);
   z-index: 1;
-  margin: 100px auto -100px
+  margin: 100px auto -100px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .top_block > .wrapper > .cont {
-  width: 45%;
+  width: 35%;
   padding: 0 0 0 50px;
-  margin-right: 10%
 }
 
 .top_block > .wrapper > .calculator_block {
-  max-width: 550px;
-  width: 45%
+  max-width: 650px;
+  width: 55%
 }
 
 .top_block > .wrapper > .cont .title {
@@ -648,14 +651,14 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
 
 .top_block > .wrapper > .cont .txt {
   color: #fff;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   line-height: 1.3;
   margin: 0 0 40px
 }
 
 .top_block > .wrapper > .cont .txt h2, .top_block > .wrapper > .cont .txt h3 {
   font-size: 23px;
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   margin: 0 0 20px
 }
 
@@ -695,7 +698,7 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
   border-radius: 50px;
   background: #ffcb57;
   color: #1f1f1f;
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-size: 20px;
   line-height: 1;
   text-align: center;
@@ -719,7 +722,7 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
   border-radius: 50px;
   background: #c5d3e5;
   color: #1f1f1f;
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-size: 15px;
   line-height: 1;
   text-align: center;
@@ -733,7 +736,7 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
 }
 
 button.ppl, .button.ppl, .button2.ppl {
-  background: #a45bc9;
+  background: $first-color;
   color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .16)
 }
@@ -825,7 +828,7 @@ input[type="number"] {
 .inp_range_block .from_to {
   display: flex;
   color: #999;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 12px;
   position: relative;
   top: -8px;
@@ -1094,7 +1097,7 @@ input[type="range"]::-moz-range-track {
 
 .calculator .privacy_block .cont, .md_form .privacy_block .cont {
   color: #393939;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 13px;
   font-weight: 300;
   padding: 3px 0 0 10px
@@ -1102,7 +1105,7 @@ input[type="range"]::-moz-range-track {
 
 .calculator_block .note {
   color: #393939;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 13px;
   font-weight: 300;
   padding: 20px 0 20px 60px
@@ -1117,8 +1120,6 @@ input[type="range"]::-moz-range-track {
 }
 
 .inform_block {
-  background: #f7f7f7;
-  background: linear-gradient(to bottom, #f7f7f7, #fff 30%);
   padding: 200px 0 50px
 }
 
@@ -1153,7 +1154,7 @@ input[type="range"]::-moz-range-track {
 
 .inform_blocks > .item i {
   display: inline-block;
-  color: #a45bc9;
+  color: $first-color;
   font-size: 58px;
   line-height: 58px;
   margin: 0 0 30px
@@ -1180,7 +1181,7 @@ input[type="range"]::-moz-range-track {
 .inform_blocks > .item ul li {
   //background: url(design/megacredit/images/icons/check.svg) no-repeat 0 0/24px 24px;
   color: #222;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.2;
@@ -1195,7 +1196,7 @@ input[type="range"]::-moz-range-track {
 
 .inform_blocks > .item .txt p {
   color: #222;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.2;
@@ -1203,13 +1204,13 @@ input[type="range"]::-moz-range-track {
 }
 
 .steps_block {
-  background: linear-gradient(to bottom, #fff, #fff calc(50% - 1px), #e9eef4 50%);
+  background: $gradient;
   padding: 40px 0
 }
 
 .steps_block > .wrapper {
-  background: #a45bc9;
-  background: linear-gradient(to right bottom, #5835b7, #a45bc9 70%);
+  background: $first-color;
+  background: $gradient;
   border-radius: 20px;
   width: 1640px;
   max-width: calc(100% - 50px);
@@ -1372,7 +1373,7 @@ input[type="range"]::-moz-range-track {
 
 .slick-prev:before, .slick-next:before {
   color: #919395;
-  font-family: 'main';
+  font-family: $oswald;
   font-size: 30px;
   line-height: 1
 }
@@ -1487,7 +1488,7 @@ input[type="range"]::-moz-range-track {
 
 .comment .cont .txt {
   font-size: 15px;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-style: italic;
   font-weight: 100;
   line-height: 1.3
@@ -1541,7 +1542,7 @@ input[type="range"]::-moz-range-track {
 
 .comment .info_line {
   color: #999;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 14px;
   margin: 30px 0 0
 }
@@ -1627,10 +1628,10 @@ input[name=more_faq]:checked ~ .faq .faq_list > div:nth-child(n+5) {
 .faq_list > div .f_title:before {
   content: '?';
   display: block;
-  background: #a45bc9;
+  background: $first-color;
   border-radius: 20px 20px 0 20px;
   color: #fff;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 28px;
   text-align: center;
   line-height: 46px;
@@ -1649,7 +1650,7 @@ input[name=faq]:checked ~ .f_title:before {
 .faq_list > div .cont {
   display: none;
   color: #555;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   line-height: 1.2;
   font-weight: 400;
   padding: 10px 0 10px 60px
@@ -1747,7 +1748,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .consultation_block .description {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 100;
   margin: 0 0 40px
 }
@@ -1766,7 +1767,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .consultation_block .privacy_block .cont {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 13px;
   font-weight: 300;
   padding: 3px 0 0 10px
@@ -1852,7 +1853,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .contacts_block .contacts .cont, .contacts_items > .item .cont {
   color: #1f1f1f;
-  font-family: 'Helvetica Neue Cyr Light'
+  font-family: $noto-sans;
 }
 
 .contacts_block .contacts .cont i, .contacts_items > .item .cont i {
@@ -1861,7 +1862,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .contacts_block .address {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-weight: 100;
   margin: 0 0 30px
 }
@@ -1992,7 +1993,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .info {
   color: #222;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   line-height: 1.2;
   font-weight: 100;
   font-style: italic
@@ -2015,7 +2016,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .credit_info > .wrapper .txt {
   color: #666;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 300
 }
 
@@ -2024,8 +2025,8 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .footer {
-  background: #a45bc9;
-  background: linear-gradient(to right, #5835b7, #a45bc9 60%)
+  background: $first-color;
+  background: $gradient
 }
 
 .footer > .wrapper {
@@ -2037,7 +2038,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 .footer .nav_block {
   border-bottom: rgba(255, 255, 255, .5) 1px solid;
   color: #fff;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   padding: 60px 0 50px
 }
 
@@ -2089,7 +2090,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 .footer .company_copyright .cont p, .footer .ssl .cont p {
   display: block;
   font-size: 13px;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 100;
   line-height: 1.2;
   margin: 0
@@ -2147,7 +2148,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .md_content .phone_block {
   font-size: 24px;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 700;
   margin: 0 0 20px
 }
@@ -2172,7 +2173,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .fancybox-slide .md_content.txt p {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 15px;
   font-weight: 100;
   line-height: 1.3
@@ -2184,7 +2185,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .path {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 13px;
   float: left;
   position: relative;
@@ -2285,7 +2286,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 .post_info_block {
   display: table;
   background: #333;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   border-radius: 20px;
   margin: 0 0 30px
 }
@@ -2328,7 +2329,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .author_bx {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   margin: 7px 0 7px 25px
 }
 
@@ -2342,7 +2343,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .author_title {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   color: #777
 }
 
@@ -2421,7 +2422,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .author_block .a_title {
-  font-family: 'Helvetica Neue Cyr Light'
+  font-family: $noto-sans;
 }
 
 .author_block p {
@@ -2470,13 +2471,13 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .posts > li .post_info, .blog_box .date {
   color: #999;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 100;
   margin: 0 0 20px
 }
 
 .posts > li .annotation, .page_block .txt {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-weight: 100;
   line-height: 1.3
 }
@@ -2570,7 +2571,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .pagination_block {
   font-size: 20px;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   text-align: center;
   clear: both;
   margin: 10px 0 50px
@@ -2638,19 +2639,19 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .page_block h2, .page_block .h2 {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-size: 22px;
   margin: 20px 0 10px
 }
 
 .page_block h3, .page_block .h3 {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-size: 20px;
   margin: 20px 0 10px
 }
 
 .page_block h4, .page_block .h4 {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-size: 18px;
   margin: 20px 0 10px
 }
@@ -2701,7 +2702,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .page_block .contact_and_info .info_title {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: $noto-sans;
   font-size: 18px;
   margin: 0 0 15px
 }
@@ -2728,7 +2729,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 
 .toggle_txt_bx .txt:after {
   content: '';
-  background: linear-gradient(to top, #e9eef4, rgba(233, 238, 244, 0));
+  background: $gradient;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2928,14 +2929,14 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 .mob_sidebar .menu li a span {
   display: block;
   color: #666;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 12px;
   font-weight: normal
 }
 
 .mob_sidebar .languages li {
   color: #555;
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: $noto-sans;
   font-size: 14px;
   margin: 0 0 12px
 }
@@ -3356,7 +3357,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
     height: 28px
   }
   .inform_block {
-    padding: 170px auto 20px
+    padding: 170px 0 20px;
   }
   .inform_blocks > .item {
     padding: 25px
@@ -3470,7 +3471,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
     content: '\e919';
     background: transparent;
     color: #fff;
-    font-family: 'main';
+    font-family: $oswald;
     font-size: 20px;
     left: 50%;
     top: calc(100% + 10px);
@@ -4228,7 +4229,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
   width: 70px;
   line-height: 44px;
   font-size: 13px;
-  font-family: Helvetica\ Neue, Helvetica, Arial, sans-serif;
+  font-family: $noto-sans;
   text-align: center;
   color: #ddd;
   background-color: rgba(30, 30, 30, .7);
@@ -4411,7 +4412,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
   margin: 0;
   padding: 0;
   color: #444;
-  font: 16px/20px Helvetica\ Neue, Helvetica, Arial, sans-serif
+  font: 16px/20px $noto-sans, sans-serif
 }
 
 .fancybox-close-small {
@@ -4437,7 +4438,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
   right: 5px;
   width: 30px;
   height: 30px;
-  font: 20px/30px Arial, Helvetica\ Neue, Helvetica, sans-serif;
+  font: 20px/30px $noto-sans sans-serif;
   color: #888;
   font-weight: 300;
   text-align: center;
@@ -4478,7 +4479,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
   left: 0;
   right: 0;
   padding: 60px 30px 0;
-  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .1) 20%, rgba(0, 0, 0, .2) 40%, rgba(0, 0, 0, .6) 80%, rgba(0, 0, 0, .8));
+  background: $gradient;
   pointer-events: none
 }
 
@@ -4486,7 +4487,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
   padding: 30px 0;
   border-top: 1px solid hsla(0, 0%, 100%, .4);
   font-size: 14px;
-  font-family: Helvetica\ Neue, Helvetica, Arial, sans-serif;
+  font-family: $noto-sans, sans-serif;
   color: #fff;
   line-height: 20px;
   -webkit-text-size-adjust: none

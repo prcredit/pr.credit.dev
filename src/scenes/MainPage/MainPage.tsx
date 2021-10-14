@@ -7,33 +7,10 @@ const MainPage = () => {
   return (
     <>
       <section className="section-main">
-
         <div className="container">
-
-
-
-
-
-
-
-
-
-
           <div className="top_block w100">
             <div className="id" id="calculator"></div>
             <div className="wrapper fx w">
-              <div className="cont">
-                <h1 className="title2">Автоломбард MegaCredit у Києві</h1>
-                <h2 className="title1">1% ставка<br/> за перший місяць</h2>
-                <ul>
-                  <li>Отримайте гроші протягом 60 хвилин</li>
-                  <li>Продовжуйте користуватися вашим автомобілем</li>
-                  <li>Кредит без підтвердження доходів</li>
-                  <li>Без витрат на КАСКО</li>
-                </ul>
-              </div>
-
-
               <div className="calculator_block">
                 <div className="id" id="calculator_bx"></div>
                 <div className="calculator form_block">
@@ -191,25 +168,18 @@ const MainPage = () => {
 
               </div>
 
-
+              <div className="cont">
+                <h1 className="title2">Автоломбард MegaCredit у Києві</h1>
+                <h2 className="title1">1% ставка<br/> за перший місяць</h2>
+                <ul>
+                  <li>Отримайте гроші протягом 60 хвилин</li>
+                  <li>Продовжуйте користуватися вашим автомобілем</li>
+                  <li>Кредит без підтвердження доходів</li>
+                  <li>Без витрат на КАСКО</li>
+                </ul>
+              </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           <div className="inform_block w100">
             <div className="id" id="conditions"></div>
@@ -257,7 +227,6 @@ const MainPage = () => {
 
             </div>
           </div>
-
         </div>
       </section>
     </>

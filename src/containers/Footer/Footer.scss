@@ -1,6 +1,8 @@
+@import "../../styles/vars";
+
 .footer {
   width: 100%;
-  background-color: #303A62;
+  background-color: $first-color;
 
   &__top {
     width: 100%;
@@ -128,7 +130,7 @@
     &:hover {
 
       svg path {
-        fill: #303a62;
+        fill: $first-color;
       }
 
       &:before {
