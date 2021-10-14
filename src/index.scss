@@ -1,0 +1,16 @@
+@import "src/styles/vars.scss";
+
+@import "src/styles/libs/reset";
+
+@import "src/styles/libs/slick";
+@import "src/styles/libs/slick-theme";
+@import "src/styles/slick-sets.scss";
+
+
+@import "src/styles/fonts.scss";
+
+@import "src/styles/main.scss";
+
+body {
+  min-height: 100vh;
+}

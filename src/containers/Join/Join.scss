@@ -1,0 +1,59 @@
+.join {
+  color: #fff;
+  
+
+  &__box {
+    border-radius: 30px;
+    padding: 90px 20px 100px 95px;
+    overflow: hidden;
+    background: url(/media/images/sections/join/girl-money.png)no-repeat bottom -1px right, linear-gradient(245.5deg, #202B86 0%, #3A459E 100%);
+  
+    @media (max-width: 1259px) {
+      background: url(/media/images/sections/join/girl-money.png)no-repeat bottom -1px right / 450px, linear-gradient(245.5deg, #202B86 0%, #3A459E 100%);
+    }
+
+    @media (max-width: 991px) {
+      background: linear-gradient(245.5deg, #202B86 0%, #3A459E 100%);
+      padding: 40px 30px;
+    }
+
+    @media (max-width: 767px) {
+      padding-bottom: 400px;
+      background: url(/media/images/sections/join/girl-money-mob.png)no-repeat bottom -1px right, linear-gradient(245.5deg, #202B86 0%, #3A459E 100%);
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 15px;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__info {
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    margin-bottom: 45px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+}

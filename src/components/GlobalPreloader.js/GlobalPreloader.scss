@@ -1,0 +1,173 @@
+.main-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 68;
+}
+
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 69;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: 1s all;
+
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__box {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    filter: url("#goo");
+    animation: rotateMove 2s ease-in-out infinite;
+    margin: 0 0 30px;
+  }
+
+  &__perc {
+    font-size: 28px;
+    color: #7a7f8d;
+    font-weight: 700;
+
+    &_num {
+      font-size: 36px;
+    }
+  }
+
+  &__dot {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__dot-3 {
+    background-color: #2cfafc;
+    animation: dot3move 2s ease infinite, index 6s ease infinite;
+  }
+
+  &__dot-2 {
+    background-color: #3c49e1;
+    animation: dot2move 2s ease infinite, index 6s -4s ease infinite;
+  }
+
+  &__dot-1 {
+    background-color: #f72074;
+    animation: dot1move 2s ease infinite, index 6s -2s ease infinite;
+  }
+}
+
+@keyframes dot3move {
+  20% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: translateY(-18px) scale(0.45);
+  }
+
+  60% {
+    transform: translateY(-90px) scale(0.45);
+  }
+
+  80% {
+    transform: translateY(-90px) scale(0.45);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes dot2move {
+  20% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: translate(-16px, 12px) scale(0.45);
+  }
+
+  60% {
+    transform: translate(-80px, 60px) scale(0.45);
+  }
+
+  80% {
+    transform: translate(-80px, 60px) scale(0.45);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes dot1move {
+  20% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: translate(16px, 12px) scale(0.45);
+  }
+
+  60% {
+    transform: translate(80px, 60px) scale(0.45);
+  }
+
+  80% {
+    transform: translate(80px, 60px) scale(0.45);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes rotateMove {
+  55% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes index {
+  0%,
+  100% {
+    z-index: 3;
+  }
+
+  33.3% {
+    z-index: 2;
+  }
+
+  66.6% {
+    z-index: 1;
+  }
+}

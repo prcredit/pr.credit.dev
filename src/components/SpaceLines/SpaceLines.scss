@@ -1,0 +1,86 @@
+.spaceLine {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  top: 0;
+  z-index: -1;
+}
+
+.spaceLine_1 {
+  left: calc(50% - 474px);
+}
+
+.spaceLine_2 {
+  left: calc(50%);
+}
+
+.spaceLine_3 {
+  right: calc(50% - 474px);
+}
+
+.gleam1,
+.gleam3 {
+  background: linear-gradient(180deg, rgba(247, 174, 249, 0) 0%, #f7aef9 100%);
+}
+
+.gleam1 {
+  height: 40px;
+  width: 1px;
+  display: block;
+  left: 0;
+  position: absolute;
+  animation: 10s linear 2s infinite normal moveDown;
+  z-index: 1;
+}
+
+.gleam2 {
+  height: 40px;
+  width: 1px;
+  display: block;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(180deg, #01e6f0 0%, rgba(1, 230, 240, 0) 100%);
+  animation: 5s linear 1s infinite normal moveUp;
+}
+
+.gleam3 {
+  height: 40px;
+  width: 1px;
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  animation: 7s linear 3s infinite normal moveDown;
+}
+
+@keyframes moveDown {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: calc(100% - 50px);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    bottom: 0%;
+  }
+
+  100% {
+    bottom: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .spaceLine_1 {
+    left: 35px;
+  }
+
+  .spaceLine_3 {
+    right: 35px;
+  }
+}

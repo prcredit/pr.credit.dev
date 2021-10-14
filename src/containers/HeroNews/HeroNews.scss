@@ -1,0 +1,47 @@
+.hero-news {
+    padding: 185px 220px 140px;
+    background: 
+        url(/media/images/sections/hero-news/hero-news-bg1.png)no-repeat left 85px bottom 70px, 
+        url(/media/images/sections/hero-news/hero-news-bg2.png)no-repeat right 85px bottom 120px,
+        url(/media/images/sections/hero-news/bubble-bg.png)no-repeat right 100px bottom 60px / 19px,
+        url(/media/images/sections/hero-news/bubble-bg.png)no-repeat left 270px bottom 225px / 28px,
+        url(/media/images/sections/hero-news/half-circle-bg.png)no-repeat center bottom,
+        linear-gradient(to left, #202B86 0%, #3A459E 100%);
+
+    @media (max-width: 1259px) {
+        background: 
+            url(/media/images/sections/hero-news/hero-news-bg1.png)no-repeat left 30px bottom 70px, 
+            url(/media/images/sections/hero-news/hero-news-bg2.png)no-repeat right 30px bottom 120px,
+            url(/media/images/sections/hero-news/bubble-bg.png)no-repeat right 40px bottom 60px / 19px,
+            url(/media/images/sections/hero-news/bubble-bg.png)no-repeat left 180px bottom 225px / 28px,
+            url(/media/images/sections/hero-news/half-circle-bg.png)no-repeat center bottom / 700px,
+            linear-gradient(to left, #202B86 0%, #3A459E 100%);
+    }
+
+    @media (max-width: 991px) {
+        background: 
+            url(/media/images/sections/hero-news/hero-news-bg1.png)no-repeat left 20px top 100px / 80px, 
+            url(/media/images/sections/hero-news/hero-news-bg2.png)no-repeat right 20px top 76px / 75px,
+            url(/media/images/sections/hero-news/bubble-bg.png)no-repeat right 130px top 95px / 19px,
+            url(/media/images/sections/hero-news/bubble-bg.png)no-repeat left 130px top 130px / 28px,
+            url(/media/images/sections/hero-news/half-circle-bg.png)no-repeat center bottom / 400px,
+            linear-gradient(to left, #202B86 0%, #3A459E 100%);
+        padding: 185px 0 35px;
+    }
+
+    @media (max-width: 500px) {
+        background: 
+            url(/media/images/sections/hero-news/hero-news-bg1.png)no-repeat left 20px top 100px / 80px, 
+            url(/media/images/sections/hero-news/hero-news-bg2.png)no-repeat right 20px top 76px / 75px,
+            url(/media/images/sections/hero-news/bubble-bg.png)no-repeat right 130px top 95px / 19px,
+            url(/media/images/sections/hero-news/bubble-bg.png)no-repeat left 130px top 130px / 28px,
+            url(/media/images/sections/hero-news/half-circle-bg.png)no-repeat center bottom / 80%,
+            linear-gradient(to left, #202B86 0%, #3A459E 100%);
+        padding: 185px 0 35px;
+    }
+
+    &__title {
+        text-align: center;
+        color: #fff;
+    }
+}

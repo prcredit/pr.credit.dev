@@ -1,0 +1,102 @@
+@import "src/styles/vars.scss";
+
+.contacts {
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__items {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -85px;
+      right: -63px;
+      width: 168px;
+      height: 154px;
+      background-image: url('/media/images/sections/contacts/before.svg');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
+    }
+  }
+
+  &-info {
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.4;
+      color: $dark;
+      margin-bottom: 15px;
+
+      span {
+        font-weight: 700;
+      }
+
+      a {
+        display: block;
+        color: $green;
+        transition: color .3s ease;
+
+        &:hover {
+          color: $darkGreen;
+        }
+      }
+
+      &--last {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  &-map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($dark, .1);
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    @media (max-width: 991px) {
+      height: 300px;
+    }
+
+  }
+}

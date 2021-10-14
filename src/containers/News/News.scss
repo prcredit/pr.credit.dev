@@ -1,0 +1,65 @@
+@import "src/styles/vars.scss";
+
+.news {
+  &__text {
+    font-size: 24px;
+    line-height: (33/24);
+    color: #A4A3BA;
+  }
+
+  &__item-title {
+    font-size: 45px;
+    line-height: (57/45);
+    font-weight: 700;
+    color: #3C3B4E;
+    font-family: $rubik;
+  }
+
+  &__date {
+    border-radius: 100px;
+    font-size: 24px;
+    line-height: (30/24);
+    color: #A4A3BA;
+    font-weight: 700;
+  }
+
+  &__loader {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    .dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #33aa7e;
+      display: inline-block;
+      animation: slide 1s infinite;
+    }
+  }
+}
+
+ 
+@for $n from 1 through 5 {
+  .dot:nth-child(#{$n}) {
+    animation-delay: (.1s * $n);
+    background: Navy(#33aa7e, (50 * $n));
+  }
+} 
+  
+  
+
+@keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: .3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
