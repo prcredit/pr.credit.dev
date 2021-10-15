@@ -87,7 +87,7 @@ input::-webkit-inner-spin-button {
 
   &--confirmed, &--completed {
     background: rgba(51, 170, 126, 0.1);
-    color: #218962;
+    color: $another;
   }
 
   &--processing {

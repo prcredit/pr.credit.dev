@@ -384,11 +384,7 @@ p {
   padding: 0 20px
 }
 
-body.scrolled .header, .header.fixed {
-  background: #fff;
-  border-bottom: #bbb 1px solid;
-  position: fixed
-}
+
 
 .header .logo {
   float: left;
@@ -416,9 +412,7 @@ body.scrolled .header, .header.fixed {
   top: 6px
 }
 
-.pg_home.scrolled .header .menu li:first-child {
-  display: block
-}
+
 
 .header .menu li a {
   display: block;
@@ -532,17 +526,7 @@ body.scrolled .header, .header.fixed {
   text-transform: uppercase
 }
 
-body.scrolled .header .to_order {
-  display: block
-}
 
-body.scrolled .header .phones_block {
-  margin-right: 0
-}
-
-body.scrolled .header .region_block, body.scrolled .header .languages_block {
-  display: none
-}
 
 .header .to_phones {
   display: none;
@@ -734,7 +718,7 @@ body.scrolled .header .region_block, body.scrolled .header .languages_block {
 }
 
 button.ppl, .button.ppl, .button2.ppl {
-  background: $first-color;
+  background: $dark;
   color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .16)
 }
@@ -1152,7 +1136,7 @@ input[type="range"]::-moz-range-track {
 
 .inform_blocks > .item i {
   display: inline-block;
-  color: $first-color;
+  color: $dark;
   font-size: 58px;
   line-height: 58px;
   margin: 0 0 30px
@@ -1207,7 +1191,7 @@ input[type="range"]::-moz-range-track {
 }
 
 .steps_block > .wrapper {
-  background: $first-color;
+  background: $dark;
   background: $gradient;
   border-radius: 20px;
   width: 1640px;
@@ -1617,7 +1601,7 @@ input[name=more_faq]:checked ~ .faq .faq_list > div:nth-child(n+5) {
 .faq_list > div .f_title:before {
   content: '?';
   display: block;
-  background: $first-color;
+  background: $dark;
   border-radius: 20px 20px 0 20px;
   color: #fff;
   font-family: $noto-sans;
@@ -2014,7 +1998,7 @@ input[name=more_faq]:checked ~ .cont_wrap .more_faq {
 }
 
 .footer {
-  background: $first-color;
+  background: $dark;
   background: $gradient
 }
 
@@ -3296,9 +3280,7 @@ body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-a
 }
 
 @media (max-width: 1000px) {
-  .header .phones_block, .header .to_order, body.scrolled .header .to_order, .header .menu, .faq_form_block {
-    display: none
-  }
+
   .header .to_phones, .header .open_sidebar {
     display: block
   }

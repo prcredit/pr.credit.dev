@@ -72,36 +72,36 @@ const Header = (props: any) => {
                 {/*</a>*/}
               </div>
 
-              <div className="header__select select">
-                <div
-                  className={classGenerator('select__current', [
-                    selectedLang === 'ru' && 'ru',
-                    selectedLang === 'en' && 'en',
-                  ])}
-                >
-                  <span/>
-                </div>
+              {/*<div className="header__select select">*/}
+              {/*  <div*/}
+              {/*    className={classGenerator('select__current', [*/}
+              {/*      selectedLang === 'ru' && 'ru',*/}
+              {/*      selectedLang === 'en' && 'en',*/}
+              {/*    ])}*/}
+              {/*  >*/}
+              {/*    <span/>*/}
+              {/*  </div>*/}
 
-                <ul className="select__countrylist">
-                  <li
-                    className={classGenerator('select__item select__item_ru', [
-                      selectedLang === 'ru' && 'active',
-                    ])}
-                    onClick={() => mobileChangeLang('ru')}
-                  >
-                    <img src={`${window.location.origin}/media/images/icons/ru.svg`} alt=""/> <span>Русский</span>
-                  </li>
+              {/*  <ul className="select__countrylist">*/}
+              {/*    <li*/}
+              {/*      className={classGenerator('select__item select__item_ru', [*/}
+              {/*        selectedLang === 'ru' && 'active',*/}
+              {/*      ])}*/}
+              {/*      onClick={() => mobileChangeLang('ru')}*/}
+              {/*    >*/}
+              {/*      <img src={`${window.location.origin}/media/images/icons/ru.svg`} alt=""/> <span>Русский</span>*/}
+              {/*    </li>*/}
 
-                  <li
-                    className={classGenerator('select__item select__item_en', [
-                      selectedLang === 'en' && 'active',
-                    ])}
-                    onClick={() => mobileChangeLang('en')}
-                  >
-                    <img src={`${window.location.origin}/media/images/icons/en.svg`} alt=""/> <span>English</span>
-                  </li>
-                </ul>
-              </div>
+              {/*    <li*/}
+              {/*      className={classGenerator('select__item select__item_en', [*/}
+              {/*        selectedLang === 'en' && 'active',*/}
+              {/*      ])}*/}
+              {/*      onClick={() => mobileChangeLang('en')}*/}
+              {/*    >*/}
+              {/*      <img src={`${window.location.origin}/media/images/icons/en.svg`} alt=""/> <span>English</span>*/}
+              {/*    </li>*/}
+              {/*  </ul>*/}
+              {/*</div>*/}
             </nav>
           </div>
         </div>

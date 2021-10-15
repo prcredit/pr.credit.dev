@@ -34,7 +34,7 @@
 
           &:after {
             width: 100%;
-            background-color: $first-color;
+            background-color: $dark;
             border-radius: 6px;
           }
 
@@ -60,7 +60,7 @@
           width: 6px;
           height: 6px;
           border-radius: 50%;
-          border: 1px solid $first-color;
+          border: 1px solid $dark;
           padding: 0;
           transition: .3s ease;
         }

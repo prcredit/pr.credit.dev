@@ -12,8 +12,7 @@ const MainPage = () => {
 
   return (
     <>
-      <section className="section-main">
-        <div className="container">
+
           <Hero/>
 
           <Calculator/>
@@ -25,8 +24,7 @@ const MainPage = () => {
           <FAQ/>
 
           <Contacts/>
-        </div>
-      </section>
+
     </>
   )
 }

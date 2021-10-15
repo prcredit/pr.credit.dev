@@ -29,7 +29,7 @@
   &__block {
     width: 100%;
     padding: 55px 30px 70px;
-    background-color: $first-color;
+    background-color: $dark;
     background-image: url('/media/images/statistic/background.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     @media (max-width: 991px) {
       border-radius: 0 0 15px 15px;
       padding: 30px 15px 50px;
-      background: linear-gradient(to right, #385991, #323e67);
+      background: $dark;
     }
   }
 
