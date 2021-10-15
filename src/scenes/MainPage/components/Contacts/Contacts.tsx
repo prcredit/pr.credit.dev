@@ -11,7 +11,7 @@ const Contacts = () => {
 
 
   return (
-    <section id="contacts" className="contacts">
+    <section id="contacts" className="section contacts">
       <div className="container">
         <h2 className="title contacts__title">
           Контакти

@@ -41,7 +41,7 @@ const Team = () => {
 
   return (
 
-    <section className="team team__section" id='team'>
+    <section className="section team team__section" id='team'>
       <div className="container">
         <h3 className="title team__title">
           Наші відгуки

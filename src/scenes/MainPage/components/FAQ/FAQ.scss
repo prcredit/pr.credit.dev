@@ -1,9 +1,7 @@
 @import '../../../../styles/vars';
 
 .FAQ {
-  @media (min-width: 992px) {
-    padding-bottom: 130px;
-  }
+  background-color: $dark;
 
   &__title {
     margin-bottom: 50px;
@@ -60,7 +58,7 @@
   }
 
   &__table {
-    background: #111D35;
+    background: $dark;
     padding: 0 20px;
     border-radius: 5px;
     flex-shrink: 0;
@@ -131,7 +129,8 @@
   }
 
   &__text {
-    color: $dark;
+    color: $another-light;
+    font-weight: 400;
     max-height: 0;
     transition: .3s ease;
     overflow: hidden;

@@ -1,39 +1,39 @@
-import React, {useContext, useState} from 'react';
-import {Reveal} from "react-awesome-reveal";
+import React, { useContext, useState } from 'react';
 
-import {IFAQProps} from "./FAQ.types";
+import { IFAQProps } from "./FAQ.types";
 
 import './FAQ.scss';
 import FAQItem from "./components/FAQItem";
-import {customAnimation} from "../../../../config/constants";
 
 
 const FAQ = () => {
-
-
   const dataFAQ: IFAQProps[] = [
     {
-      ask: '111111111',
+      ask: 'Чи можливе дострокове погашення позики?',
       answers: [
-        '1111111',
+        'Так, таке погашення можливо. В нашій компанії дострокове погашення відбувається без будь-яких штрафних санкцій.',
       ]
     },
     {
-      ask: '222222222222',
+      ask: 'Від чого залежать умови позики (відсоткова ставка і сума видачі)?',
       answers: [
-       '222222',
+        'Максимальна сума, на яку може розраховувати наш клієнт, залежить від: вартості автомобіля, кредитної історії клієнта, а також, правової форми оформлення позики (чи буде це кредит або лізинг, автомобіль буде залишатися у нас на стоянці або в користуванні у клієнта).\n' +
+        '\n' +
+        'Відсоткова ставка визначається так само індивідуально і залежить від терміну позики, суми і правової форми оформлення такої позики.',
       ]
     },
     {
-      ask: '33333333333',
+      ask: 'На який термін видається кредит під заставу автомобіля?',
       answers: [
-        '3333333333',
+        'Мінімальний термін кредитування який передбачений законодавством - 2 місяці, максимальний - 12 місяців, з правом пролонгації договору на такий же термін.\n' +
+        '\n' +
+        'Мінімальний термін (2 місяці), жодним чином не обмежує право клієнта погасити позику достроково і без штрафних санкцій.',
       ]
     },
     {
-      ask: '444444444444444',
+      ask: 'Чи можливий кредит під заставу авто, якщо в минулому були проблеми з кредитною історією?',
       answers: [
-        '444444444444',
+        'Можливий, але ми змушені врахувати цей ризик і видати трохи меншу суму або запропонувати максимальну суму, але з безпечної правовою формою оформлення позики.',
       ]
     },
   ]
@@ -41,56 +41,54 @@ const FAQ = () => {
   const [activeItem, setActiveItem] = useState(null);
 
   return (
-    <section className="FAQ anchor" id="FAQ">
+    <section className="section FAQ" id="FAQ">
       <div className="container">
+        <div className="FAQ__wrapper">
+          <div className="FAQ__title-block">
+            <h2 className="FAQ__title title title--light">
+              <span>FAQ</span> <br/> Відповіді на часто задавані питання
+            </h2>
 
-          <div className="FAQ__wrapper">
-            <div className="FAQ__title-block">
-              <h2 className="FAQ__title title">
-                <span>qqqqqqqq</span> wwwwwwwwwwww
-              </h2>
+            <div className="FAQ__email-block hidden">
+              <div className="FAQ__email-icon">
+                <img src="/media/images/general/email.svg" alt=""/>
+              </div>
 
-              <div className="FAQ__email-block hidden">
-                <div className="FAQ__email-icon">
-                  <img src="/media/images/general/email.svg" alt=""/>
-                </div>
+              <div className="FAQ__email-text">
+                <h5>
+                  eeeeeeeeee e-mail
+                </h5>
 
-                <div className="FAQ__email-text">
-                  <h5>
-                    eeeeeeeeee e-mail
-                  </h5>
-
-                  <a href="mailto:support@sincere.systems">
-                    support@sincere.systems
-                  </a>
-                </div>
+                <a href="mailto:support@sincere.systems">
+                  support@sincere.systems
+                </a>
               </div>
             </div>
-
-            <ul className="FAQ__table">
-              {
-                dataFAQ.map(item => (
-                  <FAQItem
-                    ask={item.ask}
-                    setActiveItem={setActiveItem}
-                    activeItem={activeItem === item.ask}
-                    key={item.ask}
-                  >
-                    <div className="FAQ__text">
-                      {
-                        item.answers.map(text => {
-                          return (
-                            <p key={text} dangerouslySetInnerHTML={{__html: text}}/>
-                          )
-                        })
-                      }
-                    </div>
-                  </FAQItem>
-                ))
-              }
-            </ul>
           </div>
 
+          <ul className="FAQ__table">
+            {
+              dataFAQ.map(item => (
+                <FAQItem
+                  ask={item.ask}
+                  setActiveItem={setActiveItem}
+                  activeItem={activeItem === item.ask}
+                  key={item.ask}
+                >
+                  <div className="FAQ__text">
+                    {
+                      item.answers.map(text => {
+                        return (
+                          <p key={text} dangerouslySetInnerHTML={{__html: text}}/>
+                        )
+                      })
+                    }
+                  </div>
+                </FAQItem>
+              ))
+            }
+          </ul>
+        </div>
       </div>
     </section>
   )
