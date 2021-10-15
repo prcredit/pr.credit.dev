@@ -28,23 +28,6 @@
       grid-template-columns: 1fr;
       grid-gap: 30px;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: -85px;
-      right: -63px;
-      width: 168px;
-      height: 154px;
-      background-image: url('/media/images/sections/contacts/before.svg');
-      background-size: contain;
-      background-position: center center;
-      background-repeat: no-repeat;
-
-      @media (max-width: 991px) {
-        content: none;
-      }
-    }
   }
 
   &-info {
