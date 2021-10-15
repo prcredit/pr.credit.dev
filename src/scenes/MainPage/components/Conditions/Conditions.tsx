@@ -8,10 +8,14 @@ const Conditions = () => {
     <>
       <section id="conditions" className="section section-conditions">
         <div className="container">
+          <h3 className="title title--light conditions__title">
+            Умови подання заявки
+          </h3>
+
           <div className="conditions__items">
             <div className="conditions__item">
               <img className='conditions__image' src="" alt=""/>
-              <h6 className="conditions__title">
+              <h6 className="conditions__subtitle">
                 Хто може подати заявку?
               </h6>
               <ul className="conditions__list">
@@ -22,7 +26,7 @@ const Conditions = () => {
 
             <div className="conditions__item">
               <img className='conditions__image' src="" alt=""/>
-              <h6 className="conditions__title">
+              <h6 className="conditions__subtitle">
                 Вимоги до авто
               </h6>
               <ul className="conditions__list">
@@ -34,7 +38,7 @@ const Conditions = () => {
 
             <div className="conditions__item">
               <img className='conditions__image' src="" alt=""/>
-              <h6 className="conditions__title">
+              <h6 className="conditions__subtitle">
                 Умови договору
               </h6>
               <ul className="conditions__list">
@@ -47,7 +51,7 @@ const Conditions = () => {
 
             <div className="conditions__item">
               <img className='conditions__image' src="" alt=""/>
-              <h6 className="conditions__title">
+              <h6 className="conditions__subtitle">
                 Необхідні документи
               </h6>
               <ul className="conditions__list">

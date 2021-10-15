@@ -52,6 +52,7 @@ body {
   font-size: 60px;
   font-weight: 900;
   line-height: (75/60);
+  text-align: center;
 
   @media (max-width: 991px) {
     font-size: 50px;
@@ -83,8 +84,8 @@ body {
     }
   }
 
-  &--white {
-    color: #fff;
+  &--light {
+    color: $light;
   }
 }
 

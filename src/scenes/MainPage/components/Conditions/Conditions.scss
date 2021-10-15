@@ -6,6 +6,19 @@
 }
 
 .conditions {
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -27,7 +40,7 @@
     }
   }
 
-  &__title {
+  &__subtitle {
     display: block;
     color: $dark;
     font-size: 28px;
