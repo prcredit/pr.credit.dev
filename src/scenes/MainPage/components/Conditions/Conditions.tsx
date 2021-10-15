@@ -1,4 +1,5 @@
 import React from "react";
+import { IoDocumentOutline, IoDocumentsOutline, IoCarSportOutline, IoPeopleOutline } from "react-icons/io5";
 
 import './Conditions.scss';
 
@@ -14,7 +15,9 @@ const Conditions = () => {
 
           <div className="conditions__items">
             <div className="conditions__item">
-              <img className='conditions__image' src="" alt=""/>
+              <div className="conditions__icon">
+                <IoPeopleOutline size={50} color={'4e70ab'}/>
+              </div>
               <h6 className="conditions__subtitle">
                 Хто може подати заявку?
               </h6>
@@ -25,7 +28,9 @@ const Conditions = () => {
             </div>
 
             <div className="conditions__item">
-              <img className='conditions__image' src="" alt=""/>
+              <div className="conditions__icon">
+                <IoCarSportOutline size={50} color={'4e70ab'}/>
+              </div>
               <h6 className="conditions__subtitle">
                 Вимоги до авто
               </h6>
@@ -37,7 +42,9 @@ const Conditions = () => {
             </div>
 
             <div className="conditions__item">
-              <img className='conditions__image' src="" alt=""/>
+              <div className="conditions__icon">
+                <IoDocumentOutline size={50} color={'4e70ab'}/>
+              </div>
               <h6 className="conditions__subtitle">
                 Умови договору
               </h6>
@@ -50,7 +57,9 @@ const Conditions = () => {
             </div>
 
             <div className="conditions__item">
-              <img className='conditions__image' src="" alt=""/>
+              <div className="conditions__icon">
+                <IoDocumentsOutline size={50} color={'4e70ab'}/>
+              </div>
               <h6 className="conditions__subtitle">
                 Необхідні документи
               </h6>

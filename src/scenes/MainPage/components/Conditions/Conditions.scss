@@ -40,12 +40,18 @@
     }
   }
 
+  &__icon {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
   &__subtitle {
     display: block;
     color: $dark;
     font-size: 28px;
     font-weight: 600;
     margin: 0 0 30px;
+    text-align: center;
   }
 
   &__list {
