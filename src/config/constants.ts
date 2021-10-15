@@ -2,12 +2,11 @@ import {keyframes} from "@emotion/react";
 
 export const ROUTES = {
   main: '/',
-  block: '/block/:block',
-  setBlockRoute: (block: string) => `/block/${block}`,
-  tx: '/tx/:tx',
-  setTxRoute: (tx: string) => `/tx/${tx}`,
-  address: '/address/:address',
-  setAddressRoute: (wallet: string) => `/address/${wallet}`,
+  pawnshop: '/pawnshop',
+  trading: '/trading',
+  usa: '/usa',
+  contacts: '/contacts',
+
   notFound: '/not-found',
 }
 

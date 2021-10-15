@@ -1,0 +1,52 @@
+@import "src/styles/vars.scss";
+
+
+.title-section {
+  color: $light;
+  position: relative;
+  margin-top: 66px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 124px 0 60px;
+  background-image: url(/media/images/sections/hero/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($dark, .5);
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+
+  }
+}

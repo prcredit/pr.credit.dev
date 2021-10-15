@@ -15,9 +15,7 @@ const Hero = () => {
             Автоломбард <span> PR CREDIT</span> у Києві
           </h1>
 
-          <h3 className="hero__subtitle">
-            Фантастична природа, чисте повітря і атмосфера спокою та натхнення! Завітайте до нас та відчуйте це
-            особисто.
+          <h3 className="hero__subtitle hidden">
           </h3>
 
           <a

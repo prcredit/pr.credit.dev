@@ -58,29 +58,56 @@ const Header = (props: any) => {
           <div className="header__nav-wrapper">
             <nav className="header__nav">
               <div className="header__links">
-                <a href='#hero' onClick={() => mobileUnchor()}>
+                <NavLink
+                  to={ROUTES.main}
+                  onClick={() => mobileUnchor()}>
                   Головна
-                </a>
+                </NavLink>
 
-                <a href='#calculator' onClick={() => mobileUnchor()}>
-                  Калькулятор
-                </a>
+                <NavLink
+                  to={ROUTES.pawnshop}
+                  onClick={() => mobileUnchor()}>
+                  Автоломбард
+                </NavLink>
 
-                <a href='#conditions' onClick={() => mobileUnchor()}>
-                  Умови
-                </a>
+                <NavLink
+                  to={ROUTES.trading}
+                  onClick={() => mobileUnchor()}>
+                  Викуп/продаж авто
+                </NavLink>
 
-                <a href='#reviews' onClick={() => mobileUnchor()}>
-                  Відгуки
-                </a>
+                <NavLink
+                  to={ROUTES.usa}
+                  onClick={() => mobileUnchor()}>
+                  Пригон авто iз США
+                </NavLink>
 
-                <a href='#FAQ' onClick={() => mobileUnchor()}>
-                  FAQ
-                </a>
-
-                <a href='#contacts' onClick={() => mobileUnchor()}>
+                <NavLink
+                  to={ROUTES.contacts}
+                  onClick={() => mobileUnchor()}>
                   Контакти
-                </a>
+                </NavLink>
+
+
+                {/*<a href='#calculator' onClick={() => mobileUnchor()}>*/}
+                {/*  Калькулятор*/}
+                {/*</a>*/}
+
+                {/*<a href='#conditions' onClick={() => mobileUnchor()}>*/}
+                {/*  Умови*/}
+                {/*</a>*/}
+
+                {/*<a href='#reviews' onClick={() => mobileUnchor()}>*/}
+                {/*  Відгуки*/}
+                {/*</a>*/}
+
+                {/*<a href='#FAQ' onClick={() => mobileUnchor()}>*/}
+                {/*  FAQ*/}
+                {/*</a>*/}
+
+                {/*<a href='#contacts' onClick={() => mobileUnchor()}>*/}
+                {/*  Контакти*/}
+                {/*</a>*/}
               </div>
 
               <a
