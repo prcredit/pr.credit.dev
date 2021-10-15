@@ -6,3 +6,13 @@ $noto-sans: 'Noto Sans', sans-serif;
 $first-color: #000;
 $second-color: #fff;
 $gradient: #000;
+
+@mixin showVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin hideVisible {
+  opacity: 0;
+  visibility: hidden;
+}

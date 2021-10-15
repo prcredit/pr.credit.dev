@@ -1,3 +1,5 @@
+import {keyframes} from "@emotion/react";
+
 export const ROUTES = {
   main: '/',
   block: '/block/:block',
@@ -16,16 +18,10 @@ export const MEDIA_SIZES = {
 }
 
 export const LINK_ROUTES = {
-  system: 'https://s-forex.io',
-  wallet: 'https://s-wallet.ai',
-  token: 'https://sn-token.io',
-  pharmaceutical: 'https://s-pharmaceutical.io',
-  ipo: 'https://s-ipo.io',
-  cabinet: 'https://backoffice.s-group.io/personal-office',
 
-  walletCabinet: 'https://pay.s-wallet.ai/cabinet',
-  signIn: 'https://backoffice.s-group.io/sign_in',
-  signUp: 'https://backoffice.s-group.io/sign_up',
+  contacts: {
+    number: '69',
+  },
 
   social: {
     facebookEn: 'https://www.facebook.com/SGroup.en',
@@ -39,3 +35,15 @@ export const LINK_ROUTES = {
     telegramRu: 'https://t.me/SGroup_ru',
   }
 }
+
+export const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;

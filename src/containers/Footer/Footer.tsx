@@ -26,7 +26,7 @@ const Footer = () => {
           </NavLink>
 
           <nav className="footer__nav">
-            <a href={LINK_ROUTES.token}
+            <a href={''}
                target='_blank' rel="noopener noreferrer">
               S-Token
             </a>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__bottom">
-          <p className="footer__copyright">Copyright © {new Date().getFullYear()}, S-Group Ltd</p>
+          <p className="footer__copyright">Copyright © {new Date().getFullYear()}, PR CREDIT</p>
 
           <div className="footer__social">
             <p>Подписывайтесь</p>

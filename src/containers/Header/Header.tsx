@@ -60,7 +60,7 @@ const Header = (props: any) => {
                   S-Explorer
                 </a>
 
-                <a href={LINK_ROUTES.token}
+                <a href={''}
                    target='_blank' rel="noopener noreferrer">
                   S-Token
                 </a>
