@@ -50,7 +50,7 @@ const Team = () => {
         <SlickSlider {...sliderSettings}>
           <div className='team__item'>
             <div className="team__flex">
-              <img src={`/media/images/sections/team/$.jpg`} alt="zz"
+              <img src={`/media/images/sections/reviews/1.jpg`} alt=""
                    className="team__image"/>
 
               <span className="team__name">
@@ -63,7 +63,7 @@ const Team = () => {
           </div>
           <div className='team__item'>
             <div className="team__flex">
-              <img src={`/media/images/sections/team/$.jpg`} alt="zz"
+              <img src={`/media/images/sections/reviews/0.jpg`} alt=""
                    className="team__image"/>
 
               <span className="team__name">
@@ -76,7 +76,7 @@ const Team = () => {
           </div>
           <div className='team__item'>
             <div className="team__flex">
-              <img src={`/media/images/sections/team/$.jpg`} alt="zz"
+              <img src={`/media/images/sections/reviews/2.jpg`} alt=""
                    className="team__image"/>
 
               <span className="team__name">
@@ -89,7 +89,7 @@ const Team = () => {
           </div>
           <div className='team__item'>
             <div className="team__flex">
-              <img src={`/media/images/sections/team/$.jpg`} alt="zz"
+              <img src={`/media/images/sections/reviews/3.jpg`} alt=""
                    className="team__image"/>
 
               <span className="team__name">
@@ -103,11 +103,11 @@ const Team = () => {
           </div>
           <div className='team__item'>
             <div className="team__flex">
-              <img src={`/media/images/sections/team/$.jpg`} alt="zz"
+              <img src={`/media/images/sections/reviews/4.jpg`} alt=""
                    className="team__image"/>
 
               <span className="team__name">
-                Кирилл
+                Карина
               </span>
             </div>
             <p className="team__text">
