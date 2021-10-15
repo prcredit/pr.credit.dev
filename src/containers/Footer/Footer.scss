@@ -100,64 +100,6 @@
   }
 }
 
-.social {
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    justify-content: center;
-  }
-
-  a {
-    position: relative;
-    width: 29px;
-    height: 29px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #464F73 0%, #5D6585 100%);
-    margin-right: 20px;
-
-    svg {
-      position: relative;
-      path {
-        transition: fill .3s ease;
-      }
-    }
-
-    &:hover {
-
-      svg path {
-        fill: $dark;
-      }
-
-      &:before {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-
-    &:before {
-      content: "";
-      opacity: 0;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: scale(0);
-      width: 100%;
-      height: 100%;
-      background: #fff;
-      border-radius: 50%;
-      transition: .3s ease;
-    }
-  }
-}
 
 
 

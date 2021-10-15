@@ -41,7 +41,7 @@ const Team = () => {
 
   return (
 
-    <section className="section team team__section" id='team'>
+    <section className="section team team__section" id='reviews'>
       <div className="container">
         <h3 className="title team__title">
           Наші відгуки
@@ -97,8 +97,8 @@ const Team = () => {
               </span>
             </div>
             <p className="team__text">
-              Всем рекомендую кредитное агенство "МЕГА КРЕДИТ"-так как в нем работают профессионалы-ребята компетентны в своем деле,что сразу порадовало!!!<br/>
-              Спасибо,вам " Мега кредит"-за человеческий и профессиональный подход!!!
+              Всем рекомендую кредитное агенство "PR CREDIT"-так как в нем работают профессионалы-ребята компетентны в своем деле,что сразу порадовало!!!<br/>
+              Спасибо,вам "PR CREDIT"-за человеческий и профессиональный подход!!!
               </p>
           </div>
           <div className='team__item'>

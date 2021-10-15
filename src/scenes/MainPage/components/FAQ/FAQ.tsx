@@ -48,22 +48,6 @@ const FAQ = () => {
             <h2 className="FAQ__title title title--light">
               <span>FAQ</span> <br/> Відповіді на часто задавані питання
             </h2>
-
-            <div className="FAQ__email-block hidden">
-              <div className="FAQ__email-icon">
-                <img src="/media/images/general/email.svg" alt=""/>
-              </div>
-
-              <div className="FAQ__email-text">
-                <h5>
-                  eeeeeeeeee e-mail
-                </h5>
-
-                <a href="mailto:support@sincere.systems">
-                  support@sincere.systems
-                </a>
-              </div>
-            </div>
           </div>
 
           <ul className="FAQ__table">

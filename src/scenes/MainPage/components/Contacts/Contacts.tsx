@@ -26,15 +26,17 @@ const Contacts = () => {
 
           <div className="contacts-info">
             <p className="contacts-info__text">
-              <span>Назва:</span> Долина Озер
+              <span>Назва:</span> PR CREDIT
             </p>
 
             <p className="contacts-info__text">
-              <span>Адреса:</span> Київська обл. Макаровський район, село Лишня
+              <span>Адреса:</span> м. Київ, вул. Туполєва, 1Б
             </p>
 
             <p className="contacts-info__text">
-              <span>Координати для GPS: </span> 50.314343, 29.959684
+              <span>Посилання на Google Maps: </span>
+              <a href='https://goo.gl/maps/rf2SE1ggbB5Ec4fv8' target='_blank' rel="noopener noreferrer"> https://goo.gl/maps/rf2SE1ggbB5Ec4fv8</a>
+
             </p>
 
             <p className="contacts-info__text">
@@ -44,10 +46,10 @@ const Contacts = () => {
             <p className="contacts-info__text">
               <span>Телефон для довідки та бронювання: </span>
 
-              <a href={LINK_ROUTES.contacts.number}> +380 (50) 053 88 05</a>
+              <a href={`tel:${LINK_ROUTES.contacts.number}`}> +380 (50) 050 50 50</a>
             </p>
 
-            <p className="contacts-info__text contacts-info__text--last">
+            <p className="contacts-info__text">
               <span>Соціальні мережі:</span>
             </p>
 

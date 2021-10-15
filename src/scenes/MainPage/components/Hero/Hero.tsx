@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
 
-    <section className="hero" id='#hero'>
+    <section className="hero" id='hero'>
       <div className="container">
         <div className="hero__container">
           <h1 className="title hero__title">
@@ -21,7 +21,7 @@ const Hero = () => {
           </h3>
 
           <a
-            href={LINK_ROUTES.contacts.number}
+            href={`tel:${LINK_ROUTES.contacts.number}`}
             className="link-btn link-btn--dark"
             rel="noopener noreferrer"
           >

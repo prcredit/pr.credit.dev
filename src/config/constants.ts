@@ -24,15 +24,11 @@ export const LINK_ROUTES = {
   },
 
   social: {
-    facebookEn: 'https://www.facebook.com/SGroup.en',
-    instagramEn: 'https://www.instagram.com/SGroup_en',
-    youtubeEn: 'https://www.youtube.com/channel/UCjMumEGncMkciO9txuG1Cjg',
-    telegramEn: 'https://t.me/SGroup_en',
-
-    facebookRu: 'https://www.facebook.com/SGroup.ru',
-    instagramRu: 'https://www.instagram.com/SGroup_ru',
-    youtubeRu: 'https://www.youtube.com/channel/UCjMumEGncMkciO9txuG1Cjg',
-    telegramRu: 'https://t.me/SGroup_ru',
+    facebook: 'https://www.facebook.com/',
+    instagram: 'https://www.instagram.com/',
+    youtube: 'https://www.youtube.com/',
+    telegram: 'https://t.me/',
+    viber: 'viber://add?number=',
   }
 }
 

@@ -99,6 +99,14 @@
   &__bars {
     display: none;
   }
+
+  .link-btn {
+    margin-left: 15px;
+
+    @media (max-width: 991px) {
+      margin: 10px 0 0;
+    }
+  }
 }
 
 //.select {

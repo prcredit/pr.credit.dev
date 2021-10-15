@@ -40,9 +40,9 @@ body {
     padding: 60px 0;
   }
 
-  @media (max-width: 768px) {
-    padding: 45px 0;
-  }
+  //@media (max-width: 768px) {
+  //  padding: 45px 0;
+  //}
 
 }
 
@@ -178,6 +178,14 @@ ul, li {
 
     &:hover {
       background-color: $dark;
+    }
+  }
+
+  &--sm {
+    padding: 12px 15px 10px;
+
+    svg {
+      top: -2px;
     }
   }
 
