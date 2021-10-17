@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pr.credit.dev/static/css/main.5c7efe3f.chunk.css",
+    "main.css": "/pr.credit.dev/static/css/main.aed83bd7.chunk.css",
     "main.js": "/pr.credit.dev/static/js/main.58098e2c.chunk.js",
     "main.js.map": "/pr.credit.dev/static/js/main.58098e2c.chunk.js.map",
     "runtime-main.js": "/pr.credit.dev/static/js/runtime-main.ff531957.js",
@@ -8,15 +8,15 @@
     "static/js/2.5a421910.chunk.js": "/pr.credit.dev/static/js/2.5a421910.chunk.js",
     "static/js/2.5a421910.chunk.js.map": "/pr.credit.dev/static/js/2.5a421910.chunk.js.map",
     "index.html": "/pr.credit.dev/index.html",
-    "precache-manifest.891314cf8c9c04c222dfeab118081f74.js": "/pr.credit.dev/precache-manifest.891314cf8c9c04c222dfeab118081f74.js",
+    "precache-manifest.1fc5ed55be0adf0787c32d47e97719f0.js": "/pr.credit.dev/precache-manifest.1fc5ed55be0adf0787c32d47e97719f0.js",
     "service-worker.js": "/pr.credit.dev/service-worker.js",
-    "static/css/main.5c7efe3f.chunk.css.map": "/pr.credit.dev/static/css/main.5c7efe3f.chunk.css.map",
+    "static/css/main.aed83bd7.chunk.css.map": "/pr.credit.dev/static/css/main.aed83bd7.chunk.css.map",
     "static/js/2.5a421910.chunk.js.LICENSE.txt": "/pr.credit.dev/static/js/2.5a421910.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ff531957.js",
     "static/js/2.5a421910.chunk.js",
-    "static/css/main.5c7efe3f.chunk.css",
+    "static/css/main.aed83bd7.chunk.css",
     "static/js/main.58098e2c.chunk.js"
   ]
 }
