@@ -22,13 +22,13 @@ const App = () => {
 
         <Switch>
           <Route exact path={ROUTES.main} component={MainPage}/>
-          {/*<Route exact path={ROUTES.pawnshop} component={PawnshopPage}/>*/}
-          {/*<Route exact path={ROUTES.trading} component={TradingPage}/>*/}
-          {/*<Route exact path={ROUTES.usa} component={UsaPage}/>*/}
-          {/*<Route exact path={ROUTES.contacts} component={ContactsPage}/>*/}
-          {/*<Route path={ROUTES.notFound} component={NotFound}/>*/}
+          <Route exact path={ROUTES.pawnshop} component={PawnshopPage}/>
+          <Route exact path={ROUTES.trading} component={TradingPage}/>
+          <Route exact path={ROUTES.usa} component={UsaPage}/>
+          <Route exact path={ROUTES.contacts} component={ContactsPage}/>
+          <Route path={ROUTES.notFound} component={NotFound}/>
 
-          {/*<Redirect to={ROUTES.notFound}/>*/}
+          <Redirect to={ROUTES.notFound}/>
         </Switch>
       </div>
       <Footer/>
