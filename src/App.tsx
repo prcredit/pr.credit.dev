@@ -1,11 +1,8 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import 'moment/locale/ru';
-
-import './config/api-config';
+// import './config/api-config';
 import { ROUTES } from "./config/constants";
-import { MultiLangProvider } from "./context/MultiLang/MultiLang";
 
 import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
@@ -22,7 +19,6 @@ const App = () => {
 
 
   return (
-    <MultiLangProvider>
       <div className="root__container">
         <div className="content">
           <Header/>
@@ -40,7 +36,6 @@ const App = () => {
         </div>
         <Footer/>
       </div>
-    </MultiLangProvider>
   );
 }
 
