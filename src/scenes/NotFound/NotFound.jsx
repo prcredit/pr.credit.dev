@@ -18,7 +18,7 @@ const NotFound = () => {
 
           <img className='not-found__image' src="/media/images/svg/not-found.svg" alt=""/>
 
-          <NavLink className='button button--home' to={ROUTES.main}>
+          <NavLink className='link-btn link-btn--dark' to={ROUTES.main}>
             <span>backToMain</span>
           </NavLink>
         </div>

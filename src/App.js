@@ -1,6 +1,5 @@
-import React  from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-
+import React, {useEffect}  from "react";
+import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 
 import { ROUTES } from "./config/constants";
 import Header from "./containers/Header/Header";
@@ -13,7 +12,11 @@ import ContactsPage from "./scenes/ContactsPage/ContactsPage";
 import NotFound from "./scenes/NotFound/NotFound";
 
 const App = () => {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="root__container">

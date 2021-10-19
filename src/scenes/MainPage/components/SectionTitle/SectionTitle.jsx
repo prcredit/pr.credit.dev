@@ -2,7 +2,9 @@ import React from "react";
 import './SectionTitle.scss';
 const SectionTitle = (props) => {
     const { title = '', desc = '', } = props;
-    return (<section className='section title-section'>
+    return (
+      <section id='first-section'
+      className='section title-section'>
       <div className="container">
         <h1 className="title title--light title-section__title">
           {title}
