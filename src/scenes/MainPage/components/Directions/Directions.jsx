@@ -8,7 +8,7 @@ const Directions = () => {
   return (<section className='section section-directions'>
     <div className="container">
       <h1 className="title title--light directions__title">
-        PR CREDIT
+        Види послуг
       </h1>
 
       <div className="directions">

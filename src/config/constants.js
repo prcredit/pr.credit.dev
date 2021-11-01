@@ -20,6 +20,7 @@ export const LINK_ROUTES = {
 
   contacts: {
     number: '69',
+    numberBeauty: '+380 (50) 050 50 50',
   },
 
   social: {

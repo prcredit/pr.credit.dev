@@ -1,6 +1,6 @@
 import React from "react";
-import { LINK_ROUTES } from "../../../../config/constants";
-import Social from "../../../../components/Social/Social";
+import { LINK_ROUTES } from "../../config/constants";
+import Social from "../Social/Social";
 import { Map, Marker } from "pigeon-maps";
 import './Contacts.scss';
 const Contacts = () => {
@@ -39,7 +39,7 @@ const Contacts = () => {
             <p className="contacts-info__text">
               <span>Телефон для довідки та бронювання: </span>
 
-              <a href={`tel:${LINK_ROUTES.contacts.number}`}> +380 (50) 050 50 50</a>
+              <a href={`tel:${LINK_ROUTES.contacts.number}`}> {LINK_ROUTES.contacts.numberBeauty}</a>
             </p>
 
             <p className="contacts-info__text">

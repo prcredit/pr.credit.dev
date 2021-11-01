@@ -88,6 +88,14 @@ body {
   &--light {
     color: $light;
   }
+
+  &--mb {
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .subtitle {

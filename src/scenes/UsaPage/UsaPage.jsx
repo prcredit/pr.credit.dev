@@ -1,23 +1,32 @@
 import React from 'react';
 import './UsaPage.scss';
-import SectionTitle from "../MainPage/components/SectionTitle/SectionTitle";
-import Conditions from "../MainPage/components/Conditions/Conditions";
-import FAQ from "../MainPage/components/FAQ/FAQ";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import Contacts from "../../components/Contacts/Contacts";
+import Call from "../../components/Call/Call";
+
 const UsaPage = () => {
-    return (<>
-      <SectionTitle title='Пригон авто iз США' desc='Пригон автомобiлей iз США'/>
+  return (<>
+    <SectionTitle
+      title='Пригон авто iз США'
+      // desc='Пригон автомобiлей iз США'
+    />
 
-      <section className="section section-info">
-        <div className="container">
-          <p className="title">
-            Информация про Пригон авто iз США...
-          </p>
-        </div>
-      </section>
+    <section className="section section-info">
+      <div className="container">
+        <h6 className="title title--mb">
+          Автомобіль вашої мрії з США під ключ.
+        </h6>
 
-      <Conditions />
+        <p className="subtitle">
+          Хочеш ганяти на крутому автомобілі, але не вистачає коштів? Ми знаємо вихід – замов авто із США разом с «PR
+          Credit».
+        </p>
+      </div>
+    </section>
 
-      <FAQ />
-    </>);
+    <Call/>
+
+    <Contacts/>
+  </>);
 };
 export default UsaPage;

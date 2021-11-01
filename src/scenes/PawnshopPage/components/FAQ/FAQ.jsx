@@ -38,7 +38,7 @@ const FAQ = () => {
         <div className="FAQ__wrapper">
           <div className="FAQ__title-block">
             <h2 className="FAQ__title title title--light">
-              <span>FAQ</span> <br /> Відповіді на часто задавані питання
+              <span>FAQ</span> <br /> Відповіді на часто поставленнi питання
             </h2>
           </div>
 
