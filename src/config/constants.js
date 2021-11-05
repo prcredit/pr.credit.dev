@@ -19,8 +19,8 @@ export const MEDIA_SIZES = {
 export const LINK_ROUTES = {
 
   contacts: {
-    number: '69',
-    numberBeauty: '+380 (50) 050 50 50',
+    number: '0673673300',
+    numberBeauty: '+380 (67) 367 33 00',
   },
 
   social: {

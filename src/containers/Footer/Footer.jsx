@@ -21,7 +21,7 @@ const Footer = () => {
           </NavLink>
 
           <NavLink to={ROUTES.trading} >
-            Викуп/продаж авто
+            Продаж авто
           </NavLink>
 
           <NavLink to={ROUTES.usa} >
