@@ -1,10 +1,12 @@
 import React from 'react';
+
 import Calculator from "./components/Calculator/Calculator";
 import Conditions from "../../components/Conditions/Conditions";
 import FAQ from "./components/FAQ/FAQ";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import './PawnshopPage.scss';
 import Contacts from "../../components/Contacts/Contacts";
+
+import './PawnshopPage.scss';
 
 const PawnshopPage = () => {
   return (
@@ -38,6 +40,16 @@ const PawnshopPage = () => {
       <FAQ/>
 
       <Contacts/>
+
+      {/*<script src="scripts/1.js"></script>*/}
+      {/*<script src="scripts/2.js"></script>*/}
+      {/*<script>eval(mod_pagespeed_HQVyrusla3);</script>*/}
+      {/*<script>eval(mod_pagespeed_v_7RUvBRCq);</script>*/}
+      {/*<script src="scripts/3.js"></script>*/}
+      {/*<script>eval(mod_pagespeed_SYxdpgX4Wv);</script>*/}
+      {/*<script>eval(mod_pagespeed_9$XfdS_SuS);</script>*/}
+      {/*<script>eval(mod_pagespeed_728g0iSD5B);</script>*/}
+      {/*<script>eval(mod_pagespeed_cnoU_iN5iL);</script>*/}
 
     </>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.scss';
 import Social from "../../components/Social/Social";
+import {NavLink} from "react-router-dom";
+import {ROUTES} from "../../config/constants";
 const Footer = () => {
   return (<footer id='footer' className="footer">
     <div className="container">
@@ -10,30 +12,25 @@ const Footer = () => {
         </a>
 
         <nav className="footer__nav">
-          <a href='#hero'>
+          <NavLink to={ROUTES.main} >
             Головна
-          </a>
+          </NavLink>
 
-          <a href='#calculator'>
-            Калькулятор
-          </a>
+          <NavLink to={`${ROUTES.pawnshop}`} >
+            Автоломбард
+          </NavLink>
 
-          <a href='#conditions'>
-            Умови
-          </a>
+          <NavLink to={ROUTES.trading} >
+            Викуп/продаж авто
+          </NavLink>
 
-          <a href='#reviews'>
-            Відгуки
-          </a>
+          <NavLink to={ROUTES.usa} >
+            Пригон авто iз США
+          </NavLink>
 
-          <a href='#FAQ'>
-            FAQ
-          </a>
-
-          <a href='#contacts'>
+          <NavLink to={ROUTES.contacts} >
             Контакти
-          </a>
-
+          </NavLink>
         </nav>
       </div>
 
