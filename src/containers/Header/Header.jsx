@@ -42,7 +42,9 @@ const Header = (props) => {
                 Головна
               </NavLink>
 
-              <a href={ROUTES.pawnshop}>Автоломбард</a>
+              <NavLink to={ROUTES.pawnshop} onClick={() => mobileUnchor()}>
+                Автоломбард
+              </NavLink>
 
               <NavLink to={ROUTES.trading} onClick={() => mobileUnchor()}>
                 Продаж авто
