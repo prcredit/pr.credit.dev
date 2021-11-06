@@ -118,9 +118,9 @@ const UsaPage = () => {
                   <img src="/media/images/usa/1-before/3.jpg" alt=""/>
                 </div>
 
-                <div className='gallery-dots'>
-                  <img src="/media/images/usa/1-before/4.jpg" alt=""/>
-                </div>
+                {/*<div className='gallery-dots'>*/}
+                {/*  <img src="/media/images/usa/1-before/4.jpg" alt=""/>*/}
+                {/*</div>*/}
               </Slider>
             </div>
 
