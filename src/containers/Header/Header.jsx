@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink, withRouter, Link } from 'react-router-dom';
 import { HashRouter as Router } from 'react-router-dom'
 import { LINK_ROUTES, ROUTES, MEDIA_SIZES } from '../../config/constants';
 import { classGenerator } from '../../utils';
@@ -39,13 +39,22 @@ const Header = (props) => {
         <div className="header__nav-wrapper">
           <nav className="header__nav">
             <div className="header__links">
-              <NavLink to={ROUTES.main} onClick={() => mobileUnchor()}>
-                Головна
-              </NavLink>
 
-              <NavLink to={ROUTES.pawnshop} onClick={() => mobileUnchor()}>
+              <Link to={ROUTES.main} onClick={() => mobileUnchor()}>
+                Головна
+              </Link>
+
+              <Link to={ROUTES.pawnshop} onClick={() => mobileUnchor()}>
                 Автоломбард
-              </NavLink>
+              </Link>
+
+              {/*<NavLink to={ROUTES.main} onClick={() => mobileUnchor()}>*/}
+              {/*  Головна*/}
+              {/*</NavLink>*/}
+
+              {/*<NavLink to={ROUTES.pawnshop} onClick={() => mobileUnchor()}>*/}
+              {/*  Автоломбард*/}
+              {/*</NavLink>*/}
 
               <NavLink to={ROUTES.trading} onClick={() => mobileUnchor()}>
                 Купiвля/продаж авто
