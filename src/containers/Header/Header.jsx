@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom'
 import { LINK_ROUTES, ROUTES, MEDIA_SIZES } from '../../config/constants';
 import { classGenerator } from '../../utils';
 import { MultiLangContext } from '../../context/MultiLang/MultiLang';

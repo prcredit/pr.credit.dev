@@ -1,5 +1,5 @@
 import React, {useEffect}  from "react";
-import { Route, Switch, Redirect, useLocation } from "react-router-dom";
+import { Route, Switch, Redirect, useLocation, HashRouter as Router } from "react-router-dom";
 
 import { ROUTES } from "./config/constants";
 import Header from "./containers/Header/Header";
@@ -23,16 +23,20 @@ const App = () => {
       <div className="content">
         <Header/>
 
-        <Switch>
-          <Route exact path={ROUTES.main} component={MainPage}/>
-          <Route exact path={ROUTES.pawnshop} component={PawnshopPage}/>
-          <Route exact path={ROUTES.trading} component={TradingPage}/>
-          <Route exact path={ROUTES.usa} component={UsaPage}/>
-          <Route exact path={ROUTES.contacts} component={ContactsPage}/>
-          <Route path={ROUTES.notFound} component={NotFound}/>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Switch>
+            <Route exact path={ROUTES.main} component={MainPage}/>
+            <Route exact path={ROUTES.pawnshop} component={PawnshopPage}/>
+            <Route exact path={ROUTES.trading} component={TradingPage}/>
+            <Route exact path={ROUTES.usa} component={UsaPage}/>
+            <Route exact path={ROUTES.contacts} component={ContactsPage}/>
+            <Route path={ROUTES.notFound} component={NotFound} status={404}/>
 
-          <Redirect to={ROUTES.notFound}/>
-        </Switch>
+            <Redirect to={ROUTES.notFound}/>
+          </Switch>
+        </Router>
+
+
       </div>
       <Footer/>
     </div>
