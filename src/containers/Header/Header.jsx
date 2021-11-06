@@ -48,25 +48,17 @@ const Header = (props) => {
                 Автоломбард
               </Link>
 
-              {/*<NavLink to={ROUTES.main} onClick={() => mobileUnchor()}>*/}
-              {/*  Головна*/}
-              {/*</NavLink>*/}
-
-              {/*<NavLink to={ROUTES.pawnshop} onClick={() => mobileUnchor()}>*/}
-              {/*  Автоломбард*/}
-              {/*</NavLink>*/}
-
-              <NavLink to={ROUTES.trading} onClick={() => mobileUnchor()}>
+              <Link to={ROUTES.trading} onClick={() => mobileUnchor()}>
                 Купiвля/продаж авто
-              </NavLink>
+              </Link>
 
-              <NavLink to={ROUTES.usa} onClick={() => mobileUnchor()}>
+              <Link to={ROUTES.usa} onClick={() => mobileUnchor()}>
                 Пригон авто iз США
-              </NavLink>
+              </Link>
 
-              <NavLink to={ROUTES.contacts} onClick={() => mobileUnchor()}>
+              <Link to={ROUTES.contacts} onClick={() => mobileUnchor()}>
                 Контакти
-              </NavLink>
+              </Link>
             </div>
 
             <a href={`tel:${LINK_ROUTES.contacts.number}`} className="link-btn link-btn--dark link-btn--sm" rel="noopener noreferrer">
