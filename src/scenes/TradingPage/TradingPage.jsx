@@ -10,7 +10,7 @@ import Slider from "react-slick";
 const sliderSettingsMain = {
   dots: false,
   arrows: false,
-  infinite: false,
+  infinite: true,
   speed: 500,
   autoplay: false,
   slidesToShow: 1,
@@ -21,7 +21,7 @@ const sliderSettingsMain = {
   //   {
   //     breakpoint: 768,
   //     settings: {
-  //       slidesToShow: 1,
+  //       slidesToShow: 1-before,
   //     }
   //   }
   // ]
@@ -57,18 +57,18 @@ const TradingPage = () => {
 
   return (<>
       <SectionTitle
-        title='Продаж авто'
+        title='Купiвля/продаж авто'
         // desc='Викуп та продаж автомобiлей'
       />
 
       <section className="section section-info">
         <div className="container">
           <h6 className="title title--mb">
-            Інформація про продаж авто
+            Купуй дешево, продавай дорого!
           </h6>
 
           <p className="subtitle">
-            dsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsasdsadasadsdasadsadsadsas
+            Вам терміново потрібна готівка, але немає часу продавати машину самостійно? Викупимо Ваше авто дорого! Продай авто за 15 хвилин та отримай до 95% вартості автомобіля. Також ти можеш придбати круте авто прямо у нас.
           </p>
         </div>
       </section>
@@ -76,7 +76,7 @@ const TradingPage = () => {
       <section className="section gallery">
         <div className="container">
           <h6 className="title title--light gallery__title">
-            Актуальні пропозиції
+            Актуальні пропозиції для покупки
           </h6>
 
           <div className="gallery__container">

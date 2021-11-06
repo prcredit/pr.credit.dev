@@ -22,8 +22,11 @@
     transition: opacity .3s ease;
 
     svg {
+      max-width: 26px;
+      max-height: 26px;
       position: relative;
       path {
+        fill: #fff;
         transition: fill .3s ease;
       }
     }

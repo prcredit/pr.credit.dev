@@ -12,8 +12,8 @@ const Contacts = () => {
 
         <div className="contacts__items">
           <div className="contacts-map">
-            <Map defaultCenter={[50.3140768, 29.9590459]} defaultZoom={9.5}>
-              <Marker width={50} anchor={[50.3140768, 29.9590459]}/>
+            <Map defaultCenter={[50.45174310076538, 30.489071100578194]} defaultZoom={9.5}>
+              <Marker width={50} anchor={[50.45174310076538, 30.489071100578194]}/>
             </Map>
           </div>
 
@@ -23,13 +23,12 @@ const Contacts = () => {
             </p>
 
             <p className="contacts-info__text">
-              <span>Адреса:</span> м. Київ, вул. Туполєва, 1Б
+              <span>Адреса:</span> м. Київ, вул. Дмитрівська, 35А
             </p>
 
             <p className="contacts-info__text">
               <span>Посилання на Google Maps: </span>
-              <a href='https://goo.gl/maps/rf2SE1ggbB5Ec4fv8' target='_blank' rel="noopener noreferrer"> https://goo.gl/maps/rf2SE1ggbB5Ec4fv8</a>
-
+              <a href='https://goo.gl/maps/Nuey8igtthmoizJt5' target='_blank' rel="noopener noreferrer"> https://goo.gl/maps/Nuey8igtthmoizJt5</a>
             </p>
 
             <p className="contacts-info__text">
@@ -37,7 +36,7 @@ const Contacts = () => {
             </p>
 
             <p className="contacts-info__text">
-              <span>Телефон для довідки та бронювання: </span>
+              <span>Телефон для вирішення усіх питань: </span>
 
               <a href={`tel:${LINK_ROUTES.contacts.number}`}> {LINK_ROUTES.contacts.numberBeauty}</a>
             </p>

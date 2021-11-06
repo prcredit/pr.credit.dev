@@ -41,7 +41,7 @@ const PawnshopPage = () => {
 
       <Contacts/>
 
-      {/*<script src="scripts/1.js"></script>*/}
+      {/*<script src="scripts/1-before.js"></script>*/}
       {/*<script src="scripts/2.js"></script>*/}
       {/*<script>eval(mod_pagespeed_HQVyrusla3);</script>*/}
       {/*<script>eval(mod_pagespeed_v_7RUvBRCq);</script>*/}

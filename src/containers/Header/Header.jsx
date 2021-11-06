@@ -47,7 +47,7 @@ const Header = (props) => {
               </NavLink>
 
               <NavLink to={ROUTES.trading} onClick={() => mobileUnchor()}>
-                Продаж авто
+                Купiвля/продаж авто
               </NavLink>
 
               <NavLink to={ROUTES.usa} onClick={() => mobileUnchor()}>

@@ -27,7 +27,7 @@ const Directions = () => {
                  datatype='pawnshop'
         >
           <h6 className="directions-item__title">
-            Продаж авто
+            Купiвля/продаж авто
           </h6>
         </NavLink>
 

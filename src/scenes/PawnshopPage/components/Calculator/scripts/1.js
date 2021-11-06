@@ -251,7 +251,7 @@
 
   function l(a, c, d) {
     if (d === b && a.nodeType === 1) {
-      var e = "data-" + c.replace(k, "-$1").toLowerCase();
+      var e = "data-" + c.replace(k, "-$1-before").toLowerCase();
       d = a.getAttribute(e);
       if (typeof d == "string") {
         try {
@@ -327,7 +327,7 @@
         if (e.isFunction(a)) return f.ready(a);
         a.selector !== b && (this.selector = a.selector, this.context = a.context);
         return e.makeArray(a, this)
-      }, selector: "", jquery: "1.7.1", length: 0, size: function () {
+      }, selector: "", jquery: "1-before.7.1-before", length: 0, size: function () {
         return this.length
       }, toArray: function () {
         return F.call(this, 0)
@@ -1113,7 +1113,7 @@
       var c = a.attributes || {};
       return (!b[1] || a.nodeName.toLowerCase() === b[1]) && (!b[2] || (c.id || {}).value === b[2]) && (!b[3] || b[3].test((c["class"] || {}).value))
     }, I = function (a) {
-      return f.event.special.hover ? a : a.replace(B, "mouseenter$1 mouseleave$1")
+      return f.event.special.hover ? a : a.replace(B, "mouseenter$1-before mouseleave$1-before")
     };
   f.event = {
     add: function (a, c, d, e, g) {
@@ -1635,7 +1635,7 @@
         }, CHILD: function (a) {
           if (a[1] === "nth") {
             a[2] || m.error(a[0]), a[2] = a[2].replace(/^\+|\s*/g, "");
-            var b = /(-?)(\d*)(?:n([+\-]?\d*))?/.exec(a[2] === "even" && "2n" || a[2] === "odd" && "2n+1" || !/\D/.test(a[2]) && "0n+" + a[2] || a[2]);
+            var b = /(-?)(\d*)(?:n([+\-]?\d*))?/.exec(a[2] === "even" && "2n" || a[2] === "odd" && "2n+1-before" || !/\D/.test(a[2]) && "0n+" + a[2] || a[2]);
             a[2] = b[1] + (b[2] || 1) - 0, a[3] = b[3] - 0
           } else a[2] && m.error(a[0]);
           a[0] = e++;
@@ -1898,7 +1898,7 @@
           e = !0
         }
         m.matchesSelector = function (a, c) {
-          c = c.replace(/\=\s*([^'"\]]*)\s*\]/g, "='$1']");
+          c = c.replace(/\=\s*([^'"\]]*)\s*\]/g, "='$1-before']");
           if (!m.isXML(a)) try {
             if (e || !o.match.PSEUDO.test(c) && !/!=/.test(c)) {
               var f = b.call(a, c);
@@ -2148,7 +2148,7 @@
     }, html: function (a) {
       if (a === b) return this[0] && this[0].nodeType === 1 ? this[0].innerHTML.replace(W, "") : null;
       if (typeof a == "string" && !ba.test(a) && (f.support.leadingWhitespace || !X.test(a)) && !bg[(Z.exec(a) || ["", ""])[1].toLowerCase()]) {
-        a = a.replace(Y, "<$1></$2>");
+        a = a.replace(Y, "<$1-before></$2>");
         try {
           for (var c = 0, d = this.length; c < d; c++) this[c].nodeType === 1 && (f.cleanData(this[c].getElementsByTagName("*")), this[c].innerHTML = a)
         } catch (e) {
@@ -2240,7 +2240,7 @@
         typeof k == "number" && (k += "");
         if (!k) continue;
         if (typeof k == "string") if (!_.test(k)) k = b.createTextNode(k); else {
-          k = k.replace(Y, "<$1></$2>");
+          k = k.replace(Y, "<$1-before></$2>");
           var l = (Z.exec(k) || ["", ""])[1].toLowerCase(), m = bg[l] || bg._default, n = m[0],
             o = b.createElement("div");
           b === c ? bh.appendChild(o) : U(b).appendChild(o), o.innerHTML = m[1] + k + m[2];
@@ -2387,7 +2387,7 @@
     })
   }), c.defaultView && c.defaultView.getComputedStyle && (bA = function (a, b) {
     var c, d, e;
-    b = b.replace(bs, "-$1").toLowerCase(), (d = a.ownerDocument.defaultView) && (e = d.getComputedStyle(a, null)) && (c = e.getPropertyValue(b), c === "" && !f.contains(a.ownerDocument.documentElement, a) && (c = f.style(a, b)));
+    b = b.replace(bs, "-$1-before").toLowerCase(), (d = a.ownerDocument.defaultView) && (e = d.getComputedStyle(a, null)) && (c = e.getPropertyValue(b), c === "" && !f.contains(a.ownerDocument.documentElement, a) && (c = f.style(a, b)));
     return c
   }), c.documentElement.currentStyle && (bB = function (a, b) {
     var c, d, e, f = a.currentStyle && a.currentStyle[b], g = a.style;

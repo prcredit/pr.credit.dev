@@ -25,10 +25,11 @@ export const LINK_ROUTES = {
 
   social: {
     facebook: 'https://www.facebook.com/',
-    instagram: 'https://www.instagram.com/',
+    instagram: 'https://www.instagram.com/pr_autocredit',
     youtube: 'https://www.youtube.com/',
     telegram: 'https://t.me/',
-    viber: 'viber://add?number=',
+    viber: `viber://add?number=0673673300`,
+    wa: `https://wa.me/0673673300`,
   }
 }
 
