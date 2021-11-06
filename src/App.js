@@ -34,23 +34,6 @@ const App = () => {
           <Redirect to={ROUTES.notFound}/>
         </Switch>
 
-
-              {/*<li>*/}
-              {/*  <Link to={ROUTES.main}>Home</Link>*/}
-              {/*</li>*/}
-              {/*<li>*/}
-              {/*  <Link to={ROUTES.pawnshop}>pawnshop</Link>*/}
-              {/*</li>*/}
-
-        {/*<Switch>*/}
-        {/*  <Route exact path="/" component={MainPage}>*/}
-
-        {/*  </Route>*/}
-        {/*  <Route path={ROUTES.pawnshop} component={PawnshopPage}>*/}
-
-        {/*  </Route>*/}
-        {/*</Switch>*/}
-
       </div>
       <Footer/>
     </div>
