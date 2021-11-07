@@ -51,16 +51,16 @@ const Content = () => {
 
                       <div className="inp_block">
                         <input type="hidden" name="name[11]" value="Термін кредитування"/>
-                        <input id="month" type="number" step="1" name="value[11]" min="2" max="24"/>
+                        <input id="month" type="number" step="1" name="value[11]" min="2" max="12"/>
                         <div className="unit">міс</div>
                       </div>
 
                     </div>
                     <div className="inp_range_block">
-                      <input name="month_range" type="range" min="2" max="24" step="1"/>
+                      <input name="month_range" type="range" min="2" max="12" step="1"/>
                       <div className="from_to">
                         <div className="from">від 2 міс (від 61 дня)</div>
-                        <div className="to">до 24 міс</div>
+                        <div className="to">до 12 міс</div>
                       </div>
                     </div>
 
