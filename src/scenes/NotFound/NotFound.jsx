@@ -19,7 +19,7 @@ const NotFound = () => {
           <img className='not-found__image' src="/media/images/svg/not-found.svg" alt=""/>
 
           <NavLink className='link-btn link-btn--dark' to={ROUTES.main}>
-            <span>backToMain</span>
+            <span>Главная</span>
           </NavLink>
         </div>
       </div>
