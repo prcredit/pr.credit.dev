@@ -32,7 +32,7 @@ const Contacts = () => {
             </p>
 
             <p className="contacts-info__text">
-              <span>Робочі години:</span> 07:00 - 20:00 кожного дня
+              <span>Робочі години:</span> 10:00 - 20:00 кожного дня
             </p>
 
             <p className="contacts-info__text">

@@ -39,6 +39,18 @@ const sliderSettingsSm2 = {
   focusOnSelect: true
 };
 
+const sliderSettingsSm3 = {
+  slidesToShow: 1,
+  swipeToSlide: true,
+  focusOnSelect: true
+};
+
+const sliderSettingsSm4 = {
+  slidesToShow: 1,
+  swipeToSlide: true,
+  focusOnSelect: true
+};
+
 
 const UsaPage = () => {
 
@@ -46,6 +58,11 @@ const UsaPage = () => {
   const [nav2, setNav2] = useState();
   const [nav3, setNav3] = useState();
   const [nav4, setNav4] = useState();
+
+  const [nav5, setNav5] = useState();
+  const [nav6, setNav6] = useState();
+  const [nav7, setNav7] = useState();
+  const [nav8, setNav8] = useState();
 
   return (
     <>
@@ -70,7 +87,38 @@ const UsaPage = () => {
       <section className="section gallery">
         <div className="container">
           <h6 className="title title--light gallery__title">
-            Продані авто
+            Актуальні пропозиції для покупки
+          </h6>
+
+          <div className="gallery__container">
+            <div className="gallery-slider gallery-slider--before">
+              <h4 className="gallery-slider__title">
+                До
+              </h4>
+
+
+
+            </div>
+
+            <div className="gallery-slider__arrow">
+              <img src="/media/images/icons/arrow-big.svg" alt=""/>
+            </div>
+
+            <div className="gallery-slider gallery-slider--after">
+              <h4 className="gallery-slider__title">
+                Після
+              </h4>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="section gallery">
+        <div className="container">
+          <h6 className="title title--light gallery__title">
+            Виконані замовлення наших клієнтів
           </h6>
 
           <div className="gallery__container">
