@@ -40,25 +40,25 @@ const Header = (props) => {
           <nav className="header__nav">
             <div className="header__links">
 
-              <NavLink to={ROUTES.main} onClick={() => mobileUnchor()}>
+              <a href={ROUTES.main} onClick={() => mobileUnchor()}>
                 Головна
-              </NavLink>
+              </a>
 
-              <NavLink to={ROUTES.pawnshop} onClick={() => mobileUnchor()}>
+              <a href={ROUTES.pawnshop} onClick={() => mobileUnchor()}>
                 Автоломбард
-              </NavLink>
+              </a>
 
-              <NavLink to={ROUTES.trading} onClick={() => mobileUnchor()}>
+              <a href={ROUTES.trading} onClick={() => mobileUnchor()}>
                 Купiвля/продаж авто
-              </NavLink>
+              </a>
 
-              <NavLink to={ROUTES.usa} onClick={() => mobileUnchor()}>
+              <a href={ROUTES.usa} onClick={() => mobileUnchor()}>
                 Пригон авто iз США
-              </NavLink>
+              </a>
 
-              <NavLink to={ROUTES.contacts} onClick={() => mobileUnchor()}>
+              <a href={ROUTES.contacts} onClick={() => mobileUnchor()}>
                 Контакти
-              </NavLink>
+              </a>
             </div>
 
             <a href={`tel:${LINK_ROUTES.contacts.number}`} className="link-btn link-btn--dark link-btn--sm" rel="noopener noreferrer">

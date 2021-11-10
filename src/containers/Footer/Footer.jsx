@@ -12,25 +12,25 @@ const Footer = () => {
         </a>
 
         <nav className="footer__nav">
-          <NavLink to={ROUTES.main} >
+          <a href={ROUTES.main} >
             Головна
-          </NavLink>
+          </a>
 
-          <NavLink to={`${ROUTES.pawnshop}`} >
+          <a href={`${ROUTES.pawnshop}`} >
             Автоломбард
-          </NavLink>
+          </a>
 
-          <NavLink to={ROUTES.trading} >
+          <a href={ROUTES.trading} >
             Купiвля/продаж авто
-          </NavLink>
+          </a>
 
-          <NavLink to={ROUTES.usa} >
+          <a href={ROUTES.usa} >
             Пригон авто iз США
-          </NavLink>
+          </a>
 
-          <NavLink to={ROUTES.contacts} >
+          <a href={ROUTES.contacts} >
             Контакти
-          </NavLink>
+          </a>
         </nav>
       </div>
 

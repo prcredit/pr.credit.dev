@@ -13,32 +13,32 @@ const Directions = () => {
 
       <div className="directions">
 
-        <NavLink to={ROUTES.pawnshop}
+        <a href={ROUTES.pawnshop}
                  className="directions-item"
                  datatype='pawnshop'
         >
           <h6 className="directions-item__title">
             Автоломбард
           </h6>
-        </NavLink>
+        </a>
 
-        <NavLink to={ROUTES.trading}
+        <a href={ROUTES.trading}
                  className="directions-item"
                  datatype='pawnshop'
         >
           <h6 className="directions-item__title">
             Купiвля/продаж авто
           </h6>
-        </NavLink>
+        </a>
 
-        <NavLink to={ROUTES.usa}
+        <a href={ROUTES.usa}
                  className="directions-item"
                  datatype='pawnshop'
         >
           <h6 className="directions-item__title">
             Пригон авто iз США
           </h6>
-        </NavLink>
+        </a>
       </div>
     </div>
   </section>);
