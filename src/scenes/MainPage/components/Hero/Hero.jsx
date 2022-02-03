@@ -9,7 +9,8 @@ const Hero = () => {
             Автоломбард <span> PR CREDIT</span> у Києві
           </h1>
 
-          <h3 className="hero__subtitle hidden">
+          <h3 className="hero__subtitle">
+            Допожемо Вам оформити кредит під заставу авто, або ж купити/продати авто.
           </h3>
 
           <a href={`tel:${LINK_ROUTES.contacts.number}`} className="link-btn link-btn--dark" rel="noopener noreferrer">
@@ -33,7 +34,7 @@ const Hero = () => {
 
       </div>
 
-      <a className="hero__scroll" href='#calculator'/>
+      <a className="hero__scroll" href='#directions'/>
 
     </section>);
 };

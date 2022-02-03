@@ -53,7 +53,7 @@ const Header = (props) => {
               </a>
 
               <a href={ROUTES.usa} onClick={() => mobileUnchor()}>
-                Пригон авто iз США
+                Авто iз США
               </a>
 
               <a href={ROUTES.contacts} onClick={() => mobileUnchor()}>

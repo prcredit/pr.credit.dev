@@ -5,7 +5,7 @@ import {ROUTES} from "../../../../config/constants";
 
 const Directions = () => {
 
-  return (<section className='section section-directions'>
+  return (<section id="directions" className='section section-directions'>
     <div className="container">
       <h1 className="title title--light directions__title">
         Види послуг
